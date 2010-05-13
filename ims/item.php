@@ -1,8 +1,8 @@
 <!-- Authored by Andy Nu, code cannot be distributed without prior permission from the author. -->
 
 <?php require_once('ebay/keys.php') ?>
-<?php require_once('ebay/session.php') ?>
 <?php require_once('ebay/eBaySession.php') ?>
+<?php require_once('ebay/session.php') ?>
 <?php require_once('ebay/send.php') ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
