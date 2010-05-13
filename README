@@ -1,5 +1,12 @@
 This project is ongoing...
-The idea is to list an item or items for sale from a database to all online sales channels.
-This project will be experimenting with different databases and different sales channels.
-This project will be incorporating different programming languages to achieve the same goals just for fun.
-Please email: nuandy@gmail.com if you have any questions.
+
+The idea is to export inventory from a database to all online sales channels.
+
+The database can be relational, object/document based, or even a flat file.
+
+Sales channels include eBay, Amazon, Yahoo, Buy.com, Google Base, Etsy, Craigslist, Shopzilla, BizRate, PriceGrabber, Shopping.com, NexTag etc.
+Every attempt will be made to add integration support for additional sales channels.
+
+The programming language or framework used is up to you. 
+
+Feel free to contact me at nuandy@gmail.com if you wish to contribute to this project.
