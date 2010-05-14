@@ -1,4 +1,3 @@
-<?php require_once('includes/keys.php') ?>
 <?php require_once('includes/eBaySession.php') ?>
 
 <?php
