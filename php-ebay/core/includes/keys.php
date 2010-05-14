@@ -7,7 +7,7 @@
     $production = true;   // toggle to true if going against production
     $compatabilityLevel = 551;    // eBay API version
     
-    $filename = "/alloy/php-ebay/core/includes/user_token.php";
+    $filename = "core/includes/user_token.php";
     $handle = fopen($filename, "r");
     $contents = fread($handle, filesize($filename));
     fclose($handle);
