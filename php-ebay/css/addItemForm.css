@@ -1,0 +1,75 @@
+body {
+  font-family: georgia;
+  font-size: 1em;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  display: block;
+  float: left;
+  margin-right: 0.5em;
+  text-align: right;
+  width: 10em;
+}
+
+input {
+  background: #EEEEEE;
+  border: 1px solid #3FCDEB;
+  color: #000000;
+  font-family: georgia;
+}
+
+select {
+  background: #EEEEEE;
+  border: 1px solid #3FCDEB;
+  color: #000000;
+  font-family: georgia;
+}
+
+textarea {
+  background: #EEEEEE;
+  border: 1px solid #3FCDEB;
+  color: #000000;
+  font-family: georgia;
+}
+
+.formButton input {
+  background: #3FCDEB;
+  border: 1px outset #D7B9C9;
+  color: #000000;
+  font-weight: bold;
+  margin-left: 10.5em;
+  font-family: georgia;
+}
+
+fieldset {
+  border: 1px solid #3FCDEB;
+}
+
+legend {
+  background: #FFFFFF;
+  border: 1px solid #3FCDEB;
+  color: #000000;
+  font-weight: bold;
+  padding: 2px 6px;
+}
+
+.iconPanel {
+  background: #EEEEEE;
+  border: 1px solid #3FCDEB;
+  color: #000000;
+  margin-left: 10.5em;
+  width: 34em;
+}
+
+.tab {
+  display: block;
+  float: left;
+  text-align: right;
+  padding: 2px 6px;
+  cursor: pointer;
+}
