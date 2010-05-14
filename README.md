@@ -4,4 +4,4 @@ The Alloy project began when I needed to integrate with eBay's developers API an
 
 Other sales channels in the works are Amazon, Yahoo, Google Base and more.
 
-Step by Step instructions will be added soon...
+Check out the Alloy Wiki for tutorials and instructions: http://wiki.github.com/nuandy/alloy/
