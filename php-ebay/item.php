@@ -106,7 +106,7 @@
 	</p>
         <p>
 	  <label for="Description">Description</label>
-	  <textarea name="itemDescription" id="itemDescription" style="width:380px;height:100px">$pDescription</textarea>
+	  <textarea name="itemDescription" id="itemDescription" style="width:380px;height:100px">Please describe your item and feel free to use HTML.</textarea>
 	</p>
 	<p class="formButton">
 	  <input type="submit" value="Send Item">
