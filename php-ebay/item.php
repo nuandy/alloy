@@ -1,9 +1,8 @@
 <!-- Authored by Andy Nu - nuandy@gmail.com -->
 
-<?php require_once('ebay/keys.php') ?>
-<?php require_once('ebay/eBaySession.php') ?>
-<?php require_once('ebay/session.php') ?>
-<?php require_once('ebay/send.php') ?>
+<?php require_once('core/includes/keys.php') ?>
+<?php require_once('core/includes/eBaySession.php') ?>
+<?php require_once('core/send.php') ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -32,9 +31,6 @@
 	      helpWin = window.open('','help','width=' + imgwid + ',height=' + imghgt + ',resizable=0,scrollbars=0,top=' + wint + ',left=' + winl + ',toolbar=0,location=0,directories=0,status=0,menubar=0,copyhistory=0');
 	      helpWin.document.write(content);
 	      helpWin.document.close();
-      }
-      function populate(prodID) {
-        document.getElementsByName("importData")[0].submit();
       }
       //-->
     </script>
