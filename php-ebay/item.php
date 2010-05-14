@@ -40,7 +40,7 @@
   <body>
     <fieldset>
       <legend>Send to eBay</legend>
-      <form action="send.php" method="post" name="add_item">
+      <form action="core/send.php" method="post" name="add_item">
         <p>
 	  <label for="Listing Type">Listing Type</label>
 	  <select name="listingType">
