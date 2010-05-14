@@ -48,7 +48,7 @@
         <p>
 	  <label for="Listing Type">Listing Type</label>
 	  <select name="listingType">
-	    <option selected value="Chinese">Chinese Auction</option>
+	    <option selected value="Chinese">Default Auction</option>
 	    <option value="Dutch">Dutch Auction</option>
 	    <option value="FixedPriceItem">Buy it Now</option>
 	    <option value="StoresFixedPrice">Store Inventory</option>
