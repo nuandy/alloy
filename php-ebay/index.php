@@ -1,6 +1,10 @@
 <?php require_once('core/auth.php') ?>
 
 <h1>
+  PHP Add Item Example
+</h1>
+
+<h1>
   Step 1: Grant application access
 </h1>
 
