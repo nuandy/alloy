@@ -8,9 +8,11 @@
     $compatabilityLevel = 551;    // eBay API version
     
     $filename = "core/includes/user_token.php";
-    $handle = fopen($filename, "r");
-    $contents = fread($handle, filesize($filename));
-    fclose($handle);
+    //$handle = fopen($filename, "r");
+    //$contents = fread($handle, filesize($filename));
+    //fclose($handle);
+    
+    $contents = file_get_contents($filename);
 
     if ($production) {
         $devID = 'YOUR EBAY PRODUCTION DEV KEY';   // these prod keys are different from sandbox keys
