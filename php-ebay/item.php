@@ -1,8 +1,6 @@
 <!-- Authored by Andy Nu - nuandy@gmail.com -->
 
-<?php require_once('core/includes/keys.php') ?>
-<?php require_once('core/includes/eBaySession.php') ?>
-<?php require_once('core/send.php') ?>
+<?php require_once('core/get_token.php') ?>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>

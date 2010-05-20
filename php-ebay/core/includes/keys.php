@@ -7,11 +7,7 @@
     $production = true;   // toggle to true if going against production
     $compatabilityLevel = 551;    // eBay API version
     
-    $filename = "core/includes/user_token.php";
-    //$handle = fopen($filename, "r");
-    //$contents = fread($handle, filesize($filename));
-    //fclose($handle);
-    
+    $filename = "http://".$_SERVER['SERVER_NAME']."/core/includes/user_token.php";
     $contents = file_get_contents($filename);
 
     if ($production) {

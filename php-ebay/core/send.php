@@ -1,5 +1,5 @@
+<?php require_once('includes/keys.php') ?>
 <?php require_once('includes/eBaySession.php') ?>
-
 <?php
   if(isset($_POST['listingType'])) {
     //Get the item entered

@@ -2,7 +2,11 @@
 <?php require_once('includes/eBaySession.php') ?>
 
 <?php
-$SessionID = $_GET["my_session"];
+if (isset($_COOKIE["AuthTokenDude"])) {
+  $SessionID = $_COOKIE["AuthTokenDude"];
+} else {
+  $SessionID = $_GET["my_session"];
+}
 $verb = 'FetchToken';
 $siteID = 0;
 $requestXmlBody  = '<?xml version="1.0" encoding="utf-8" ?>';
@@ -26,22 +30,20 @@ foreach ($responses as $response)
 {
 $acks = $response->getElementsByTagName("Ack");
 $ack   = $acks->item(0)->nodeValue;
-echo "Ack = $ack <BR />\n";   // Success if successful
 $Tokens = $response->getElementsByTagName("eBayAuthToken");
 $Token   = $Tokens->item(0)->nodeValue;
-echo "Token = $Token \n";
 }
 
-$filename = 'user_token.php';
+$filename = 'core/includes/user_token.php';
 $somecontent = $Token;
 
-// Let's make sure the file exists and is writable first.
-if (is_writable($filename)) {
+if (strlen($somecontent)>0) {
+  setcookie("AuthTokenDude", $SessionID);
+}
 
-    // In our example we're opening $filename in append mode.
-    // The file pointer is at the bottom of the file hence
-    // that's where $somecontent will go when we fwrite() it.
-    if (!$handle = fopen($filename, 'a')) {
+// Let's make sure the file exists and is writable.
+if (is_writable($filename)) {
+    if (!$handle = fopen($filename, 'w')) {
          echo "Cannot open file ($filename)";
          exit;
     }

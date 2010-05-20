@@ -25,8 +25,7 @@ foreach ($responses as $response)
 {
 $acks = $response->getElementsByTagName("Ack");
 $ack   = $acks->item(0)->nodeValue;
-echo "Ack = $ack <BR />\n";   // Success if successful
 $SessionIDs = $response->getElementsByTagName("SessionID");
-$SessionID   = $SessionIDs->item(0)->nodeValue;
+$SessionID = $SessionIDs->item(0)->nodeValue;
 }
 ?>
