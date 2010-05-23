@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AddItemRequest xmlns="urn:ebay:apis:eBLBaseComponents">
+<RequesterCredentials><eBayAuthToken>$userToken</eBayAuthToken></RequesterCredentials>
+<DetailLevel>ReturnAll</DetailLevel>
+<ErrorLanguage>en_US</ErrorLanguage>
+<Version>551</Version>
+<Item>
+  <Site>US</Site>
+  <PrimaryCategory>
+    <CategoryID>$primaryCategory</CategoryID>
+  </PrimaryCategory>
+  <BuyItNowPrice currencyID="USD">$buyItNowPrice</BuyItNowPrice>
+  <Country>US</Country>
+  <Currency>USD</Currency>
+  <ListingDuration>$listingDuration</ListingDuration>
+  <ListingType>$listingType</ListingType>
+  <Location><![CDATA[New York, NY]]></Location>
+  <PaymentMethods>PayPal</PaymentMethods>
+  <PayPalEmailAddress>sales@betatoys.com</PayPalEmailAddress>
+  <Quantity>$quantity</Quantity>
+  <RegionID>0</RegionID>
+  <StartPrice>$startPrice</StartPrice>
+  <ShippingDetails>
+    <ShippingServiceOptions>
+      <ShippingService>Other</ShippingService>
+      <ShippingServiceCost>12.0</ShippingServiceCost>
+      <ShippingServiceAdditionalCost>0.0</ShippingServiceAdditionalCost>
+      <ShippingServicePriority>1</ShippingServicePriority>
+      <ExpeditedService>false</ExpeditedService>
+      <ShippingTimeMin>1</ShippingTimeMin>
+      <ShippingTimeMax>7</ShippingTimeMax>
+    </ShippingServiceOptions>
+  </ShippingDetails>
+  <DispatchTimeMax>2</DispatchTimeMax>
+  <ReturnPolicy>
+    <ReturnsAcceptedOption>ReturnsAccepted</ReturnsAcceptedOption>
+    <Description>You may return the item for a full refund excluding shipping costs within 7 days. Please email us if you have additional questions regarding our return policy.</Description>
+  </ReturnPolicy>
+  <ShippingTermsInDescription>True</ShippingTermsInDescription>
+  <Title><![CDATA[$itemTitle]]></Title>
+  <PictureDetails><PictureURL><![CDATA[$pictureURL]]></PictureURL></PictureDetails>
+  <Description><![CDATA[$itemDescription]]></Description>
+</Item>
+</AddItemRequest>
