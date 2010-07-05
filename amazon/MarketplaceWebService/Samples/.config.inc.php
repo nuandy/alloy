@@ -14,8 +14,8 @@
     * to anyone. It is important to keep your Secret Access Key confidential
     * to protect your account.
     ***********************************************************************/
-    define('AWS_ACCESS_KEY_ID', 'YOUR ACCESS KEY');
-    define('AWS_SECRET_ACCESS_KEY', 'YOUR SECRET ACCESS KEY');
+    define('AWS_ACCESS_KEY_ID', '');
+    define('AWS_SECRET_ACCESS_KEY', '');
 
    /************************************************************************
     * REQUIRED
@@ -32,8 +32,8 @@
     * All MWS requests must contain the seller's merchant ID and
     * marketplace ID.
     ***********************************************************************/
-    define ('MERCHANT_ID', 'YOUR MERCHANT ID');
-    define ('MARKETPLACE_ID', 'YOUR MARKETPLACE ID');
+    define ('MERCHANT_ID', '');
+    define ('MARKETPLACE_ID', '');
     
    /************************************************************************ 
     * OPTIONAL ON SOME INSTALLATIONS
