@@ -33,26 +33,26 @@ function format_control(elm, elmtype, controlstate) {
     for (var i = 0; i < tds.length; i++) {
       switch (tds[i].className) {
         // set the right-border for popup_feedback class elements
-       case "popup_feedback": {
-         tds[i].style.borderRight = iif(controlstate == "normal", istyles["pi_menu_normal"][3], istyles[istyle][3]);
-       }
-       break;
-       case "popup_pickbutton": {
-         tds[i].style.borderColor = iif(controlstate == "normal", istyles["pi_menu_normal"][0], istyles[istyle][0]);
-       }
-       break;
-       case "alt_pickbutton": {
-         if (buttonstatus[elm.cmd]) {
-           tds[i].style.paddingLeft = istyles["pi_button_normal"][2];
-           tds[i].style.borderLeft = istyles["pi_button_normal"][3];
-         } else {
-           tds[i].style.paddingLeft = istyles[istyle][2];
-           tds[i].style.borderLeft = istyles[istyle][3];
-         }
-       }
-     }
-   }
- }
+        case "popup_feedback": {
+          tds[i].style.borderRight = iif(controlstate == "normal", istyles["pi_menu_normal"][3], istyles[istyle][3]);
+        }
+        break;
+        case "popup_pickbutton": {
+          tds[i].style.borderColor = iif(controlstate == "normal", istyles["pi_menu_normal"][0], istyles[istyle][0]);
+        }
+        break;
+        case "alt_pickbutton": {
+          if (buttonstatus[elm.cmd]) {
+            tds[i].style.paddingLeft = istyles["pi_button_normal"][2];
+            tds[i].style.borderLeft = istyles["pi_button_normal"][3];
+          } else {
+            tds[i].style.paddingLeft = istyles[istyle][2];
+            tds[i].style.borderLeft = istyles[istyle][3];
+          }
+        }
+      }
+    }
+  }
 }
 
 function set_unselectable(elm) {
